@@ -1,5 +1,5 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Logo, Row, Text } from "@once-ui-system/core";
+import { About, Gallery, Home, Newsletter, Person, Social } from "@/types";
+
 
 const person: Person = {
   firstName: "Harshul",
@@ -31,34 +31,19 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/home.jpeg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
-  featured: {
-    display: true,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
+  title: `${person.name}'s Space`,
+  description: `Personal website of ${person.name} — a teen athlete, fitness creator, and storyteller from India.`,
+  headline: (
+    <>young. driven. balling & breathing fitness. storytelling through sweat and song.</>
+  ),
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      hey — i’m <strong>Harshul</strong>, a teen athlete from india who lives for basketball,
+      fitness and creative storytelling. i train hard, sing louder, and love collabs that mix
+      movement and emotion. <br />
+      let’s make something cool together — on court, in the gym, or through the mic.
     </>
   ),
 };
@@ -66,8 +51,8 @@ const home: Home = {
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: `About – Harshul`,
+  description: `Meet Harshul, a teen athlete, fitness creator, and storyteller from India.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -76,7 +61,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "",
   },
   intro: {
@@ -84,128 +69,144 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Hearts which stop working for you start counting beats for someone one day
-
-        come ad fly with harshul 
-        lets stop them together.
+        hey — i’m <strong>Harshul</strong>. a teen athlete from india who lives for basketball,
+        fitness and storytelling. i train hard, sing louder, and create content that mixes real grind
+        with creativity. come vibe, hoop, and grow with me.
       </>
     ),
   },
+
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "What I Do",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Basketball & Fitness",
+        timeframe: "2025 - Present",
+        role: "Athlete · Trainer · Creator",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            create short-form basketball & fitness content — drills, training routines, and motivation-based reels.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            collaborate with athletes and coaches on workouts, challenges, and sports storytelling.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/me-fit.jpeg",
+            alt: "Harshul playing basketball under lights.",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Storytelling & Music",
+        timeframe: "2025 - Present",
+        role: "Storyteller · Singer · Hobbyist",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            create short narrative and singing clips for social media, blending voice and rhythm with authentic emotion.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            explore songwriting, voice practice, and duet performances with fellow creators.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/my-closeup.jpeg",
+            alt: "Harshul singing in a small home studio setup.",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
+
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education & Growth",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "High School Student – India",
+        description: (
+          <>
+            balancing academics with basketball training, fitness goals, and creative storytelling.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Self-Learning",
+        description: (
+          <>
+            learning content creation, editing, and personal branding through online resources and real practice.
+          </>
+        ),
       },
     ],
   },
+
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Skills & Focus Areas",
     skills: [
       {
-        title: "Figma",
+        title: "Basketball & Performance",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            shooting drills, ball handling, stamina & game highlights — focused on steady improvement.
+          </>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "Basketball", icon: "basketball" },
+          { name: "Training", icon: "dumbbell" },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/new-fit.jpeg",
+            alt: "Basketball shooting drill session.",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
+        title: "Fitness & Conditioning",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            bodyweight training, endurance, and beginner-to-intermediate programming for youth athletes.
+          </>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "Fitness", icon: "fitness" },
+          { name: "Bodyweight", icon: "strength" },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/my-pose.jpeg",
+            alt: "Harshul doing bodyweight training outdoors.",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Storytelling & Music",
+        description: (
+          <>
+            voice recording, short-form content writing, and hobby singing — using sound to tell human stories.
+          </>
+        ),
+        tags: [
+          { name: "Storytelling", icon: "mic" },
+          { name: "Music", icon: "music" },
+        ],
+        images: [
+          {
+            src: "/images/mygroup.jpeg",
+            alt: "Harshul recording a voice snippet for a reel.",
             width: 16,
             height: 9,
           },
@@ -214,6 +215,7 @@ const about: About = {
     ],
   },
 };
+
 
 
 
