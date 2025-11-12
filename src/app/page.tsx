@@ -9,12 +9,10 @@ import {
   Row,
   Schema,
   Meta,
-  Line,
 } from "@once-ui-system/core";
-import { home, about, person, baseURL, routes } from "@/resources";
+import { home, about, person, baseURL } from "@/resources";
 import { Mailchimp } from "@/components";
-import { Projects } from "@/components/work/Projects";
-import { Posts } from "@/components/blog/Posts";
+
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -101,11 +99,11 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
-      </RevealFx>
+         <Mailchimp/>
+      </RevealFx> 
      
-      <Projects range={[2]} />
-      <Mailchimp />
+      {/* <Projects range={[2]} /> */}
+      <Mailchimp/>
     </Column>
   );
 }

@@ -4,7 +4,6 @@ import {
   EffectsConfig,
   FontsConfig,
   MailchimpConfig,
-  ProtectedRoutesConfig,
   RoutesConfig,
   SameAsConfig,
   SchemaConfig,
@@ -14,7 +13,7 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://harshlifts.vercel.app";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -32,29 +31,27 @@ const display: DisplayConfig = {
 
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
-const protectedRoutes: ProtectedRoutesConfig = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
-};
+
 
 // Import and set font for each variant
-import { Geist } from "next/font/google";
+import {Playwrite_MX  } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 
-const heading = Geist({
+const heading =  Playwrite_MX({
   variable: "--font-heading",
-  subsets: ["latin"],
+  // subsets: ["latin"],
   display: "swap",
 });
 
-const body = Geist({
+const body = Playwrite_MX({
   variable: "--font-body",
-  subsets: ["latin"],
+  // subsets: ["latin"],
   display: "swap",
 });
 
-const label = Geist({
+const label =  Playwrite_MX({
   variable: "--font-label",
-  subsets: ["latin"],
+  // subsets: ["latin"],
   display: "swap",
 });
 
@@ -220,7 +217,6 @@ export {
   display,
   mailchimp,
   routes,
-  protectedRoutes,
   baseURL,
   fonts,
   style,

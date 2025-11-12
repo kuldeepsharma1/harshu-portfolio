@@ -5,8 +5,6 @@ export {
   newsletter,
   home,
   about,
-  blog,
-  work,
   gallery,
 } from "./content";
 
@@ -14,7 +12,6 @@ export {
   display,
   mailchimp,
   routes,
-  protectedRoutes,
   baseURL,
   fonts,
   style,

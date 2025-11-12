@@ -2,12 +2,12 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Harshu",
-  lastName: "",
+  firstName: "Harshul",
+  lastName: "Sharma",
   name: `Harshu`,
   role: "Fitness",
-  avatar: "/images/avatar.jpeg",
-  email: "",
+  avatar: "/images/avatar.jpg",
+  email: "harshulsharma020@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -22,25 +22,11 @@ const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
-  },
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/_hrshul_/",
+  }
+
 ];
 
 const home: Home = {
@@ -91,16 +77,17 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hearts which stop working for you start counting beats for someone one day
+
+        come ad fly with harshul 
+        lets stop them together.
       </>
     ),
   },
@@ -223,7 +210,7 @@ const about: About = {
             height: 9,
           },
         ],
-      },  
+      },
     ],
   },
 };
@@ -237,46 +224,44 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/my-pose.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/itsme.jpeg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
+      src: "/images/mygroup.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/me-fit.jpeg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/avatar-old.jpeg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "/images/my-closeup.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
+      src: "/images/bw-horizontal-chest.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/story.jpeg",
       alt: "image",
       orientation: "vertical",
     },
