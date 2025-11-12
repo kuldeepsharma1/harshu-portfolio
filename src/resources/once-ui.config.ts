@@ -35,6 +35,7 @@ const display: DisplayConfig = {
 
 // Import and set font for each variant
 import {Playwrite_MX  } from "next/font/google";
+import {Commissioner  } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 
 const heading =  Playwrite_MX({
@@ -43,15 +44,15 @@ const heading =  Playwrite_MX({
   display: "swap",
 });
 
-const body = Playwrite_MX({
+const body = Commissioner({
   variable: "--font-body",
-  // subsets: ["latin"],
+  subsets: ["latin"],
   display: "swap",
 });
 
-const label =  Playwrite_MX({
+const label =  Commissioner({
   variable: "--font-label",
-  // subsets: ["latin"],
+  subsets: ["latin"],
   display: "swap",
 });
 
